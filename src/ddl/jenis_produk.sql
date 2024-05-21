@@ -10,4 +10,4 @@ CREATE TABLE jenis_produk (
 -- Inject
 COPY jenis_produk
 FROM '/seed/jenis_produk.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

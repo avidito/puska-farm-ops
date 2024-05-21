@@ -23,4 +23,4 @@ CREATE TABLE public.history_populasi (
 -- Inject
 COPY history_populasi
 FROM '/seed/history_populasi.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

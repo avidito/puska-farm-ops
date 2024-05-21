@@ -24,4 +24,4 @@ CREATE TABLE pencatatan_ternak_keluar (
 -- Inject
 COPY pencatatan_ternak_keluar
 FROM '/seed/pencatatan_ternak_keluar.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

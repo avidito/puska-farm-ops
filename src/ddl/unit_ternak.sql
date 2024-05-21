@@ -21,4 +21,4 @@ CREATE TABLE unit_ternak (
 -- Inject
 COPY unit_ternak
 FROM '/seed/unit_ternak.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

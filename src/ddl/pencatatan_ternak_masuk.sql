@@ -24,4 +24,4 @@ CREATE TABLE pencatatan_ternak_masuk (
 -- Inject
 COPY pencatatan_ternak_masuk
 FROM '/seed/pencatatan_ternak_masuk.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

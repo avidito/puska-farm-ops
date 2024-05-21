@@ -9,4 +9,4 @@ CREATE TABLE wilayah (
 -- Inject
 COPY wilayah
 FROM '/seed/wilayah.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

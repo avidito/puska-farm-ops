@@ -20,4 +20,4 @@ CREATE TABLE produksi_ternak (
 -- Inject
 COPY produksi_ternak
 FROM '/seed/produksi_ternak.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

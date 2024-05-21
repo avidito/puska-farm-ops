@@ -27,4 +27,4 @@ CREATE TABLE history_kelahiran_kematian (
 -- Inject
 COPY history_kelahiran_kematian
 FROM '/seed/history_kelahiran_kematian.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

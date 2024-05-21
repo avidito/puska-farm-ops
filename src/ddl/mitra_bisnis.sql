@@ -20,4 +20,4 @@ CREATE TABLE mitra_bisnis (
 -- Inject
 COPY mitra_bisnis
 FROM '/seed/mitra_bisnis.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

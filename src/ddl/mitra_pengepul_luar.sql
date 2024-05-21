@@ -25,4 +25,4 @@ CREATE TABLE mitra_pengepul_luar (
 -- Inject
 COPY mitra_pengepul_luar
 FROM '/seed/mitra_pengepul_luar.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

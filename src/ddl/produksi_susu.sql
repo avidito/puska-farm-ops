@@ -20,4 +20,4 @@ CREATE TABLE produksi_susu (
 -- Inject
 COPY produksi_susu
 FROM '/seed/produksi_susu.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

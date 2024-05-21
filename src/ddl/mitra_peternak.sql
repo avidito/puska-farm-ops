@@ -35,4 +35,4 @@ CREATE TABLE mitra_peternak (
 -- Inject
 COPY mitra_peternak
 FROM '/seed/mitra_peternak.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");

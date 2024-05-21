@@ -8,4 +8,4 @@ CREATE TABLE kategori_mitra (
 -- Inject
 COPY kategori_mitra
 FROM '/seed/kategori_mitra.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+WITH (FORMAT 'csv', DELIMITER ';', HEADER TRUE, QUOTE "'");
