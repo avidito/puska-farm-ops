@@ -1,5 +1,7 @@
 FROM postgres:15.3
 
-COPY src/ddl/ /ddl
-COPY src/seed/ /seed
+WORKDIR /src
+COPY seed/ /seed
+COPY src/ /src
+
 COPY src/init.sh /docker-entrypoint-initdb.d/
