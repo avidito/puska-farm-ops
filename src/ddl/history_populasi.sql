@@ -17,10 +17,14 @@ CREATE TABLE public.history_populasi (
   updated_by INT8,
   deleted_by INT8,
   id_peternak INT8,
-  CONSTRAINT history_populasi_pkey PRIMARY KEY (id)
+  PRIMARY KEY (id)
 );
 
 -- Inject
 COPY history_populasi
-FROM '/seed/history_populasi.csv'
-WITH (FORMAT 'csv', DELIMITER ',', HEADER TRUE, NULL 'NULL', QUOTE "'");
+FROM '/seed/csv/history_populasi.csv'
+WITH (
+  FORMAT 'csv',
+  DELIMITER ';',
+  HEADER TRUE
+);
